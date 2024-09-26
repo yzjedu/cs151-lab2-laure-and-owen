@@ -15,6 +15,7 @@ print('This program will calculate an estimated population for a country after a
 # User is asked to input the birth rate in terms of how many seconds between births, the death rate in seconds,
 # the rate of new immigrants in seconds, the current population, and how many years into the future the user wants to
 # know the population.
+print('\n')
 between_births = float(input('What is the birth rate in terms of seconds between births?'))
 between_deaths = float(input('What is the death rate in terms of seconds between deaths?'))
 between_immigration = float(input('What is the immigration rate in terms of seconds between immigrations?'))
@@ -32,6 +33,7 @@ future_population =  (population_change + current_population)
 future_population = int(future_population)
 
 # Future US population and whether it has increased or decreased is outputted to the user
+print('\n')
 print('The US population in', future_years, 'years will be', future_population)
 if future_population > current_population:
     print('The population increased.')
